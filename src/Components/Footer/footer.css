@@ -1,0 +1,8 @@
+.footer-list-items a {
+    color: unset;
+    text-decoration: none;
+}
+
+.footer-list-items a:hover {
+    text-decoration: underline;
+}

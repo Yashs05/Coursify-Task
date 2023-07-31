@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+.app-main {
+    padding: 5rem 15rem;
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary))
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hire-btn,
+.find-jobs-btn {
+    padding: 0.75rem 2.25rem;
+    border-radius: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hire-btn {
+    color: var(--secondary);
+    background-color: white;
+    border: 1px solid var(--bg);
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hire-btn:hover {
+    background-color: #eacdcd;
 }
 
-.App-link {
-  color: #61dafb;
+.find-jobs-btn {
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.find-jobs-btn:hover {
+    background-color: #6D466B;
+}
+
+.primary-section {
+    padding: 5rem;
+}
+
+.start-btn:hover {
+    background-color: white !important;
+    color: var(--secondary) !important;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1350px) {
+    .testimonial-section {
+        margin: 0 5rem !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 0 1rem !important;
+    }
+
+    .app-main, .primary-section {
+        padding: 5rem 1rem !important;
+    }
+
+    .companies-image {
+        margin: 0 1rem !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        padding: 0.5rem 1rem !important;
+    }
+
+    .app-main, .primary-section {
+        padding: 5rem 1rem !important;
+    }
+
+    .primary-section div {
+        flex-wrap: wrap;
+    }
+
+    .primary-section h4 {
+        text-align: center;
+    }
+
+    .steps-container {
+        display: block !important;
+        text-align: center;
+    }
+
+    .how-it-works-images {
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
+    }
+
+    .companies-image {
+        margin: 0 1rem !important;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .caraousel-d-block {
+        display: block !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 0.5rem 0 !important;
+    }
+
+    .app-main, .primary-section {
+        padding: 5rem 0.5rem !important;
+    }
+
+    .testimonial-section {
+        margin: 0 0.5rem !important;
+    }
+
+    .companies-image { 
+        height: 37vw !important;
+    }
+
+    .people-images {
+        margin-bottom: 1rem;
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .caraousel-d-block {
+        padding: 1rem 0.5rem !important;
+    }
+
+    .footer-main {
+        justify-content: space-between !important;
+        padding: 3rem 0.5rem !important;
+        gap: 25px 0 !important;
+    }
+
+    .footer-items {
+        flex-basis: 50%;
+    }
 }

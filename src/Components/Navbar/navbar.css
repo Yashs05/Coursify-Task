@@ -1,0 +1,50 @@
+.navbar {
+  padding: 0 10rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--primary);
+}
+
+.nav-link {
+  color: var(--primary) !important;
+}
+
+.nav-link:hover {
+  background-color: #eacdcd;
+}
+
+.login-btn-nav,
+.signup-btn-nav {
+  padding: 0.3rem 1.5rem;
+  border-radius: 20px;
+}
+
+.login-btn-nav a,
+.signup-btn-nav a {
+  color: unset;
+  text-decoration: none;
+}
+
+.login-btn-nav {
+  background-color: var(--secondary);
+  color: white;
+  border: 1px solid var(--secondary);
+}
+
+.login-btn-nav:hover {
+  background-color: #8c5b8a;
+  border-color: #8c5b8a;
+  text-decoration: underline;
+}
+
+.signup-btn-nav {
+  color: var(--secondary);
+  background-color: var(--bg);
+  border: 1px solid var(--secondary);
+}
+
+.signup-btn-nav:hover {
+  background-color: #eacdcd;
+  text-decoration: underline;
+}
